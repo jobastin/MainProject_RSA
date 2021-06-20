@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en">
+<!-- Mirrored from startbootstrap.com/auth/login by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Mar 2021 04:21:37 GMT -->
+<head>
+        <meta charset="utf-8">
+        <title>Login Page</title>
+        <link rel="shortcut icon" href="favicon.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="msapplication-TileColor" content="#dd3d31">
+        <meta name="theme-color" content="#dd3d31">
+        <link rel="icon" type="image/png" href="image/favicon.png">
+        <link rel="preload" href="../styles.css" as="style">
+        <link rel="preload" href="../styles-admin.css" as="style">
+        <link rel="preload" href="../styles-ui-kit.css" as="style">
+        <link rel="preload" as="font" href="http://startbootstrap.com/assets/fonts/metropolis/Metropolis-SemiBold.otf" type="font/otf" crossorigin="anonymous">
+        <link rel="preload" as="font" href="http://startbootstrap.com/assets/fonts/metropolis/Metropolis-Medium.otf" type="font/otf" crossorigin="anonymous">
+        <link rel="preload" as="font" href="http://startbootstrap.com/assets/fonts/metropolis/Metropolis-Regular.otf" type="font/otf" crossorigin="anonymous">
+        <link rel="preload" as="font" href="http://startbootstrap.com/assets/fonts/metropolis/Metropolis-Bold.otf" type="font/otf" crossorigin="anonymous">
+        <link rel="preload" as="font" href="http://startbootstrap.com/assets/fonts/metropolis/Metropolis-RegularItalic.otf" type="font/otf" crossorigin="anonymous">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets.startbootstrap.com/img/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../assets.startbootstrap.com/img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../assets.startbootstrap.com/img/icons/favicon-16x16.png">
+        <link rel="mask-icon" href="https://assets.startbootstrap.com/img/icons/safari-pinned-tab.svg" color="#dd3d31">
+        <link rel="manifest" href="http://startbootstrap.com/manifest.webmanifest">
+        <script src="../../www.google.com/recaptcha/api.js"></script>
+    <link id="sb-website-styles-css" rel="stylesheet" href="css/styles.css">
+    <link id="sb-website-dynamic-css" rel="stylesheet" href="css/styles-admin.css">
+    <link rel="canonical" href="login.html">
+    <style ng-transition="serverApp">
+    </style>
+    <style ng-transition="serverApp">[_nghost-sc110]{position:fixed;bottom:0;right:0;margin:.5em;z-index:1200;width:350px}</style>
+    <style ng-transition="serverApp">#overlay[_ngcontent-sc112]{display:flex;justify-content:center;position:fixed;top:0;left:0;width:100vw;height:100%;min-height:100vh;z-index:1090;background-color:rgba(0,0,0,.5)}</style><style ng-transition="serverApp">#inputPassword[_ngcontent-sc192]{flex:0.9 0 auto}</style>
+    <style ng-transition="serverApp">[_nghost-sc132]{display:contents}</style>
+    <style ng-transition="serverApp">.btn-auth[_ngcontent-sc190]{font-size:.75rem;font-weight:500}</style>
+    </head>
+    <body>
+        <app-root _nghost-sc113="" ng-version="11.0.0">
+        <sbpro-toast-view _ngcontent-sc113="" aria-live="polite" aria-atomic="true" class="ngb-toasts" _nghost-sc110=""><!----></sbpro-toast-view>
+        <router-outlet _ngcontent-sc113=""></router-outlet>
+        <sb-login _nghost-sc192=""><sb-layout-auth _ngcontent-sc192="" class="bg-primary" _nghost-sc159="">
+        <div _ngcontent-sc159="" id="layoutAuthentication" class="bg-primary">
+        <div _ngcontent-sc159="" id="layoutAuthentication_content">
+        <main _ngcontent-sc159="">
+        <div _ngcontent-sc192="" class="container">
+        <div _ngcontent-sc192="" class="row justify-content-center">
+        <sbpro-page-card _ngcontent-sc192="" size="large" _nghost-sc132="">
+        <div _ngcontent-sc132="" class="col-xl-10 col-lg-12">
+        <div _ngcontent-sc132="" class="card border my-5">
+        <div _ngcontent-sc192="" class="card-body p-5 text-center">
+        <a href="#">
+         <img _ngcontent-sc205="" src="image/favicon.png" style="height: 7rem; width: 7rem;"></a>
+        <div _ngcontent-sc192="" class="row justify-content-center">
+        <div _ngcontent-sc192="" class="col-xl-8 col-lg-9 mb-4">
+        <h1 _ngcontent-sc194="">Roadside Assistance</h1>
+        <hr>
+        <h2 _ngcontent-sc192="">Login Page</h2>
+        </div>
+        </div>
+        <sbpro-brand-login _ngcontent-sc192="" _nghost-sc190="">
+
+        </sbpro-brand-login>
+        </div>
+        <hr _ngcontent-sc192="" class="my-0">
+        <div _ngcontent-sc192="" toastcontainer="">
+        </div>
+        <div _ngcontent-sc192="" class="card-body p-5">
+        <div _ngcontent-sc192="" class="row justify-content-center">
+        <div _ngcontent-sc192="" class="col-xl-8 col-lg-9">
+        <sbpro-login-form _ngcontent-sc192="" _nghost-sc191="">
+        <form _ngcontent-sc191="" novalidate="" class="ng-untouched ng-pristine ng-invalid">
+        <div _ngcontent-sc191="" class="form-group">
+        <label _ngcontent-sc191="" for="emailInput" class="text-gray-600 small">Email address</label>
+        <input _ngcontent-sc191="" id="emailInput" data-cy="emailInput" type="email" aria-describedby="emailHelp" formcontrolname="email" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc191="" class="invalid-feedback">Email required.</div>
+        </div>
+        <div _ngcontent-sc191="" class="form-group">
+        <label _ngcontent-sc191="" for="passwordInput" class="small text-gray-600">Password</label>
+        <input _ngcontent-sc191="" id="passwordInput" data-cy="passwordInput" type="password" formcontrolname="password" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc191="" class="invalid-feedback">Password required.</div>
+        </div>
+        <div _ngcontent-sc191="" class="form-group">
+        <a href="password-reset-request.html">Forgot your password?</a>
+        </div>
+        <div _ngcontent-sc191="" class="form-group d-flex align-items-center justify-content-between">
+        <div _ngcontent-sc191="" class="custom-control custom-control-solid custom-checkbox">
+        <input _ngcontent-sc191="" id="checkInput" data-cy="checkInput" type="checkbox" formcontrolname="checkbox" class="custom-control-input small ng-untouched ng-pristine ng-valid">
+        <label _ngcontent-sc191="" for="checkInput" class="custom-control-label">Remember password</label>
+        </div>
+        <button _ngcontent-sc191="" data-cy="loginButton" type="submit" class="btn btn-primary" disabled="">Login</button>
+        </div>
+        </form>
+        </sbpro-login-form>
+        </div>
+        </div>
+        </div>
+        <hr _ngcontent-sc192="" class="my-0">
+        <div _ngcontent-sc192="" class="card-body px-5 py-4"><div _ngcontent-sc192="" class="small text-center">New user? <a _ngcontent-sc192="" routerlink="../register" href="register.php">Create an account!</a></div></div>
+        </div>
+        </div>
+        </sbpro-page-card>
+        </div>
+        </div>
+        </main>
+        </div>
+        </div>
+        </sb-layout-auth>
+        </sb-login>
+        </app-root>
+    <script src="js/runtime-es2015.a7312101c2b80a696194.js" crossorigin="anonymous" type="module"></script>
+    <script src="js/runtime-es5.a7312101c2b80a696194.js" crossorigin="anonymous" nomodule="" defer=""></script>
+    <script src="js/polyfills-es5.3e6b557be049eae06693.js" crossorigin="anonymous" nomodule="" defer=""></script>
+    <script src="js/polyfills-es2015.9509cf6cf3660a1b8556.js" crossorigin="anonymous" type="module"></script>
+    <script src="js/scripts.7db5a8a1df1d2146c813.js" crossorigin="anonymous" defer=""></script>
+    <script src="js/vendor-es2015.39ea11c848a845592c4c.js" crossorigin="anonymous" type="module"></script>
+    <script src="js/vendor-es5.39ea11c848a845592c4c.js" crossorigin="anonymous" nomodule="" defer=""></script>
+    <script src="js/main-es2015.418775d648a9ed214bc4.js" crossorigin="anonymous" type="module"></script>
+    <script src="js/main-es5.418775d648a9ed214bc4.js" crossorigin="anonymous" nomodule="" defer=""></script>
+</body>
+</html>

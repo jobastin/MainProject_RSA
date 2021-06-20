@@ -1,0 +1,627 @@
+<!DOCTYPE html><html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>Register</title>
+        <link rel="shortcut icon" href="favicon.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="msapplication-TileColor" content="#dd3d31">
+        <meta name="theme-color" content="#dd3d31">
+
+
+    <link id="sb-website-styles-css" rel="stylesheet" href="css/styles.css">
+    <link id="sb-website-dynamic-css" rel="stylesheet" href="css/styles-admin.css">
+    <link rel="stylesheet" href="css/service_provider_reg.css">
+    <link rel="canonical" href="register.html">
+
+
+    <style ng-transition="serverApp">[_nghost-sc110]{position:fixed;bottom:0;right:0;margin:.5em;z-index:1200;width:350px}</style><style ng-transition="serverApp">#overlay[_ngcontent-sc112]{display:flex;justify-content:center;position:fixed;top:0;left:0;width:100vw;height:100%;min-height:100vh;z-index:1090;background-color:rgba(0,0,0,.5)}
+    </style>
+    <style ng-transition="serverApp">[_nghost-sc132]{display:contents}</style>
+    <style ng-transition="serverApp">.btn-auth[_ngcontent-sc190]{font-size:.75rem;font-weight:500}
+    </style>
+    <script>
+    function mechView()
+    {
+      document.getElementById("mechReg").style.display ="inline";
+      document.getElementById("fuelReg").style.display ="none";
+      document.getElementById("hospitalReg").style.display ="none";
+      // document.getElementById("n1").style.color = "blue";
+      // document.getElementById("n2").style.color = "#69717a";
+      // document.getElementById("n2").style.color = "#69717a";
+      // document.getElementByClassName("").style.opacity = "1";
+    }
+    function fuelView()
+    {
+      document.getElementById("mechReg").style.display ="none";
+      document.getElementById("fuelReg").style.display ="inline";
+      document.getElementById("hospitalReg").style.display ="none";
+    }
+    function hospitalView()
+    {
+      document.getElementById("mechReg").style.display ="none";
+      document.getElementById("fuelReg").style.display ="none";
+      document.getElementById("hospitalReg").style.display ="inline";
+    }
+    </script>
+    </head>
+
+    <body>
+        <div _ngcontent-sc159="" id="layoutAuthentication" class="bg-primary">
+        <div _ngcontent-sc159="" id="layoutAuthentication_content">
+        <main _ngcontent-sc159=""><div _ngcontent-sc194="" class="container">
+        <div _ngcontent-sc194="" class="row justify-content-center">
+        <sbpro-page-card _ngcontent-sc194="" size="large" _nghost-sc132="">
+        <div _ngcontent-sc132="" class="col-xl-10 col-lg-12">
+        <div _ngcontent-sc132="" class="card border my-5">
+        <div _ngcontent-sc194="" class="card-body p-5 text-center">
+        <a href="#">
+        <img _ngcontent-sc205="" src="favicon.png" style="height: 7rem; width: 7rem;"></a>
+
+        <div _ngcontent-sc194="" class="row justify-content-center"><div _ngcontent-sc194="" class="col-lg-8 mb-4">
+        <h1 _ngcontent-sc194="">Roadside Assistance</h1>
+
+        <h2 _ngcontent-sc194="">Sign up</h2>
+<!--        <p _ngcontent-sc194="" class="mb-0">Join our community of designers and developers and manage your purchases, favorite themes and snippets, comments, and more!</p>-->
+        </div>
+        </div>
+        </div>
+        <hr _ngcontent-sc194="" class="my-0">
+        <div _ngcontent-sc194="" class="card-body p-5">
+        <div _ngcontent-sc194="" class="text-center small text-muted mb-4">
+        </div>
+        <sbpro-register-form _ngcontent-sc194="" _nghost-sc193="">
+        <form _ngcontent-sc193="" novalidate="" class="ng-untouched ng-pristine ng-invalid">
+          <div _ngcontent-sc193="" class="form-group">
+          <label _ngcontent-sc193="" for="emailInput" class="text-gray-600 small"><h5>Register as (choose option):</h5></label>
+          <div class="cc-selector">
+          <center>
+          <table>
+          <tr>
+          <td id="p1">
+          <!-- <input id="mech" type="radio" name="service_provider" value="Mechanical" /> -->
+          <a href="#mechReg" onclick="mechView()"><label class="drinkcard-cc mech" for="visa"></label></a>
+          </td>
+          <td style="width:50%"></td>
+          <td>
+          <!-- <input id="fuel" type="radio" name="service_provider" value="Fuel Station" /> -->
+          <a href="#fuelReg" onclick="fuelView()"><label class="drinkcard-cc fuel" for="mastercard"></label></a>
+          </td>
+          <td style="width:50%"></td>
+          <td>
+          <!-- <input id="hospital" type="radio" name="service_provider" value="Hospital" /> -->
+          <a href="#hospitalReg" onclick="hospitalView()"><label class="drinkcard-cc hospital" for="hospital"></label></a>
+          </td>
+          </tr>
+          <tr>
+            <td id="n1">Mechanical Shop</td>
+            <td style="width:50%"></td>
+            <td id="n2">Fuel Station</td>
+            <td style="width:50%"></td>
+            <td id="n3">Hospital</td>
+          </tr>
+        </table>
+        </form>
+      </center>
+      </div>
+      </div>
+
+
+<!-- Mechanical Shop Registration page -->
+<div id="mechReg" style="display:none;">
+  <hr>
+        <form _ngcontent-sc193="" novalidate="" class="ng-untouched ng-pristine ng-invalid">
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="Mname" class="text-gray-600 small">Name of the Shop</label>
+        <input _ngcontent-sc193="" id="Mname" type="text" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="Mphno" class="text-gray-600 small">Phone Number</label>
+        <input _ngcontent-sc193="" id="Mphno" type="text" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="emailInput" class="text-gray-600 small">Email address</label>
+        <input _ngcontent-sc193="" id="emailInput" data-cy="emailInput" type="email" aria-describedby="emailHelp" formcontrolname="email" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Email required.</div>
+        </div>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">Name of Owner</label>
+        <input _ngcontent-sc193="" id="firstNameInput" data-cy="firstNameInput" type="text" formcontrolname="firstName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="lastNameInput" class="text-gray-600 small">Owner's Phone Number</label>
+        <input _ngcontent-sc193="" id="lastNameInput" data-cy="lastNameInput" type="text" formcontrolname="lastName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Last name required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">Shop License Number</label>
+        <input _ngcontent-sc193="" id="firstNameInput" data-cy="firstNameInput" type="text" formcontrolname="firstName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        </div>
+
+        <label _ngcontent-sc193="" for="emailInput" class="text-gray-600 small">Types Of Vehicle Serviced</label>
+        <br>
+
+        <div _ngcontent-sc193="" class="form-group d-flex align-items-center justify-content-between">
+        <div _ngcontent-sc193="" class="custom-control custom-control-solid custom-checkbox">
+        <table>
+        <tr>
+        <td>
+        <input _ngcontent-sc193="" id="termsAndConditionsInput" data-cy="termsAndConditionsInput" type="checkbox" formcontrolname="termsAndConditions" class="custom-control-input small ng-untouched ng-pristine ng-invalid">
+        <label _ngcontent-sc193="" for="termsAndConditionsInput" class="custom-control-label">Two Wheeler</label>
+        </td>
+        <td style="width:150px"></td>
+        <td>
+        <input _ngcontent-sc193="" id="termsAndConditionsInput" data-cy="termsAndConditionsInput" type="checkbox" formcontrolname="termsAndConditions" class="custom-control-input small ng-untouched ng-pristine ng-invalid">
+        <label _ngcontent-sc193="" for="termsAndConditionsInput" class="custom-control-label">Four Wheeler</label>
+        </td>
+        <td style="width:150px"></td>
+        <td>
+        <input _ngcontent-sc193="" id="termsAndConditionsInput" data-cy="termsAndConditionsInput" type="checkbox" formcontrolname="termsAndConditions" class="custom-control-input small ng-untouched ng-pristine ng-invalid">
+        <label _ngcontent-sc193="" for="termsAndConditionsInput" class="custom-control-label">Heavy Vehicle</label>
+        </td>
+        </tr>
+        </table>
+        </div>
+        </div>
+
+
+        <!-- <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="emailInput" class="text-gray-600 small">Types Of Vehicle Serviced</label>
+        <br>
+        <table>
+        <tr>
+        <td>
+        <input  type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Two Wheeler</label></td>
+        <td style="width:30%"></td>
+        <td>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Four Wheeler</label></td>
+        <td style="width:27%"></td>
+        <td>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Heavy Vehicle</label></td>
+      </tr>
+    </table>
+
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Email required.</div>
+        </div> -->
+
+
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">Address</label>
+        <textarea _ngcontent-sc193="" id="firstNameInput" data-cy="firstNameInput" type="text" formcontrolname="firstName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="" ></textarea>
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="lastNameInput" class="text-gray-600 small">Pincode</label>
+        <input _ngcontent-sc193="" id="lastNameInput" data-cy="lastNameInput" type="text" formcontrolname="lastName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Last name required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">State</label>
+        <select name="cars"  class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" id="cars">
+        <option value=""></option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        </select>
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="lastNameInput" class="text-gray-600 small">District</label>
+        <select name="cars"  class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" id="cars">
+        <option value=""></option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        </select>
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Last name required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">City</label>
+        <select name="cars"  class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" id="cars">
+        <option value=""></option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        </select>
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        </div>
+        <p>**Information from Google Map</p>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">Latitude</label>
+        <input _ngcontent-sc193="" id="firstNameInput" data-cy="firstNameInput" type="text" formcontrolname="firstName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="lastNameInput" class="text-gray-600 small">Longitude</label>
+        <input _ngcontent-sc193="" id="lastNameInput" data-cy="lastNameInput" type="text" formcontrolname="lastName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Last name required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="passwordInput" class="small text-muted">Password</label>
+        <input _ngcontent-sc193="" id="passwordInput" data-cy="passwordInput" type="password" formcontrolname="password" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Password required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="confirmPasswordInput" class="text-gray-600 small">Confirm Password</label>
+        <input _ngcontent-sc193="" id="confirmPasswordInput" data-cy="confirmPasswordInput" type="password" formcontrolname="confirmPassword" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Confirm Password required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-group d-flex align-items-center justify-content-between">
+
+        <button _ngcontent-sc193="" data-cy="registerButton" type="submit" class="btn btn-primary">Register</button>
+        </div>
+        </form>
+      </div>
+<!-- Mechanical Shop Registration page ends -->
+
+
+
+<!-- fule station Registration page -->
+<div id="fuelReg" style="display:none;">
+  <hr>
+        <form _ngcontent-sc193="" novalidate="" class="ng-untouched ng-pristine ng-invalid">
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">Comany Name</label>
+        <input _ngcontent-sc193="" id="firstNameInput" data-cy="firstNameInput" type="text" formcontrolname="firstName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="lastNameInput" class="text-gray-600 small">Phone Number</label>
+        <input _ngcontent-sc193="" id="lastNameInput" data-cy="lastNameInput" type="text" formcontrolname="lastName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Last name required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="emailInput" class="text-gray-600 small">Email address</label>
+        <input _ngcontent-sc193="" id="emailInput" data-cy="emailInput" type="email" aria-describedby="emailHelp" formcontrolname="email" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Email required.</div>
+        </div>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">Name of Owner</label>
+        <input _ngcontent-sc193="" id="firstNameInput" data-cy="firstNameInput" type="text" formcontrolname="firstName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="lastNameInput" class="text-gray-600 small">Owner's Phone Number</label>
+        <input _ngcontent-sc193="" id="lastNameInput" data-cy="lastNameInput" type="text" formcontrolname="lastName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Last name required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">License Number</label>
+        <input _ngcontent-sc193="" id="firstNameInput" data-cy="firstNameInput" type="text" formcontrolname="firstName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        </div>
+
+        <!-- <label _ngcontent-sc193="" for="emailInput" class="text-gray-600 small">Types Of Vehicle Serviced</label>
+        <br>
+
+        <div _ngcontent-sc193="" class="form-group d-flex align-items-center justify-content-between">
+        <div _ngcontent-sc193="" class="custom-control custom-control-solid custom-checkbox">
+        <table>
+        <tr>
+        <td>
+        <input _ngcontent-sc193="" id="termsAndConditionsInput" data-cy="termsAndConditionsInput" type="checkbox" formcontrolname="termsAndConditions" class="custom-control-input small ng-untouched ng-pristine ng-invalid">
+        <label _ngcontent-sc193="" for="termsAndConditionsInput" class="custom-control-label">Two Wheeler</label>
+        </td>
+        <td style="width:150px"></td>
+        <td>
+        <input _ngcontent-sc193="" id="termsAndConditionsInput" data-cy="termsAndConditionsInput" type="checkbox" formcontrolname="termsAndConditions" class="custom-control-input small ng-untouched ng-pristine ng-invalid">
+        <label _ngcontent-sc193="" for="termsAndConditionsInput" class="custom-control-label">Four Wheeler</label>
+        </td>
+        <td style="width:150px"></td>
+        <td>
+        <input _ngcontent-sc193="" id="termsAndConditionsInput" data-cy="termsAndConditionsInput" type="checkbox" formcontrolname="termsAndConditions" class="custom-control-input small ng-untouched ng-pristine ng-invalid">
+        <label _ngcontent-sc193="" for="termsAndConditionsInput" class="custom-control-label">Heavy Vehicle</label>
+        </td>
+        </tr>
+        </table>
+        </div>
+        </div> -->
+
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">Address</label>
+        <textarea _ngcontent-sc193="" id="firstNameInput" data-cy="firstNameInput" type="text" formcontrolname="firstName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="" ></textarea>
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="lastNameInput" class="text-gray-600 small">Pincode</label>
+        <input _ngcontent-sc193="" id="lastNameInput" data-cy="lastNameInput" type="text" formcontrolname="lastName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Last name required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">State</label>
+        <select name="cars"  class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" id="cars">
+        <option value=""></option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        </select>
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="lastNameInput" class="text-gray-600 small">District</label>
+        <select name="cars"  class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" id="cars">
+        <option value=""></option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        </select>
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Last name required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">City</label>
+        <select name="cars"  class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" id="cars">
+        <option value=""></option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        </select>
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        </div>
+        <p>**Information from Google Map</p>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">Latitude</label>
+        <input _ngcontent-sc193="" id="firstNameInput" data-cy="firstNameInput" type="text" formcontrolname="firstName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="lastNameInput" class="text-gray-600 small">Longitude</label>
+        <input _ngcontent-sc193="" id="lastNameInput" data-cy="lastNameInput" type="text" formcontrolname="lastName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Last name required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="passwordInput" class="small text-muted">Password</label>
+        <input _ngcontent-sc193="" id="passwordInput" data-cy="passwordInput" type="password" formcontrolname="password" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Password required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="confirmPasswordInput" class="text-gray-600 small">Confirm Password</label>
+        <input _ngcontent-sc193="" id="confirmPasswordInput" data-cy="confirmPasswordInput" type="password" formcontrolname="confirmPassword" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Confirm Password required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-group d-flex align-items-center justify-content-between">
+
+        <button _ngcontent-sc193="" data-cy="registerButton" type="submit" class="btn btn-primary">Register</button>
+        </div>
+        </form>
+      </div>
+<!-- fuel station Registration page ends -->
+
+
+<!-- Hospital registration Registration page -->
+<div id="hospitalReg" style="display:none;">
+  <hr>
+        <form _ngcontent-sc193="" novalidate="" class="ng-untouched ng-pristine ng-invalid">
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">hospitalll</label>
+        <input _ngcontent-sc193="" id="firstNameInput" data-cy="firstNameInput" type="text" formcontrolname="firstName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="lastNameInput" class="text-gray-600 small">Phone Number</label>
+        <input _ngcontent-sc193="" id="lastNameInput" data-cy="lastNameInput" type="text" formcontrolname="lastName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Last name required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="emailInput" class="text-gray-600 small">Email address</label>
+        <input _ngcontent-sc193="" id="emailInput" data-cy="emailInput" type="email" aria-describedby="emailHelp" formcontrolname="email" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Email required.</div>
+        </div>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">Gender</label>
+        <input _ngcontent-sc193="" id="firstNameInput" data-cy="firstNameInput" type="text" formcontrolname="firstName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="lastNameInput" class="text-gray-600 small">Date Of Birth</label>
+        <input _ngcontent-sc193="" id="lastNameInput" data-cy="lastNameInput" type="text" formcontrolname="lastName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Last name required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="firstNameInput" class="text-gray-600 small">Address</label>
+        <textarea _ngcontent-sc193="" id="firstNameInput" data-cy="firstNameInput" type="text" formcontrolname="firstName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="" ></textarea>
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">First name required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="lastNameInput" class="text-gray-600 small">Pincode</label>
+        <input _ngcontent-sc193="" id="lastNameInput" data-cy="lastNameInput" type="text" formcontrolname="lastName" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Last name required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-row">
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="passwordInput" class="small text-muted">Password</label>
+        <input _ngcontent-sc193="" id="passwordInput" data-cy="passwordInput" type="password" formcontrolname="password" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Password required.</div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="col-md-6">
+        <div _ngcontent-sc193="" class="form-group">
+        <label _ngcontent-sc193="" for="confirmPasswordInput" class="text-gray-600 small">Confirm Password</label>
+        <input _ngcontent-sc193="" id="confirmPasswordInput" data-cy="confirmPasswordInput" type="password" formcontrolname="confirmPassword" class="form-control form-control-solid ng-untouched ng-pristine ng-invalid" value="">
+        <div _ngcontent-sc193="" class="valid-feedback">Looks good!</div>
+        <div _ngcontent-sc193="" class="invalid-feedback">Confirm Password required.</div>
+        </div>
+        </div>
+        </div>
+        <div _ngcontent-sc193="" class="form-group d-flex align-items-center justify-content-between">
+        <div _ngcontent-sc193="" class="custom-control custom-control-solid custom-checkbox">
+        <input _ngcontent-sc193="" id="termsAndConditionsInput" data-cy="termsAndConditionsInput" type="checkbox" formcontrolname="termsAndConditions" class="custom-control-input small ng-untouched ng-pristine ng-invalid">
+        <label _ngcontent-sc193="" for="termsAndConditionsInput" class="custom-control-label">I accept the terms &amp; conditions</label>
+        <div _ngcontent-sc193="" class="invalid-feedback">You must accept the terms &amp; conditions.</div>
+        </div>
+        <button _ngcontent-sc193="" data-cy="registerButton" type="submit" class="btn btn-primary" disabled="">Register</button>
+        </div>
+        </form>
+      </div>
+<!-- hospital Registration page ends -->
+
+
+
+        </sbpro-register-form>
+        </div>
+        <div _ngcontent-sc194="" class="card-body px-5 py-4"><div _ngcontent-sc194="" class="small text-center">Have an account? <a _ngcontent-sc194="" routerlink="../login" href="login.html">Sign in!</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </sbpro-page-card>
+        </div>
+        </div>
+        </main>
+        </div>
+        </div>
+
+
+    <script src="js/runtime-es2015.a7312101c2b80a696194.js" crossorigin="anonymous" type="module"></script>
+    <script src="js/runtime-es5.a7312101c2b80a696194.js" crossorigin="anonymous" nomodule="" defer=""></script>
+    <script src="js/polyfills-es5.3e6b557be049eae06693.js" crossorigin="anonymous" nomodule="" defer=""></script>
+    <script src="js/polyfills-es2015.9509cf6cf3660a1b8556.js" crossorigin="anonymous" type="module"></script>
+    <script src="js/scripts.7db5a8a1df1d2146c813.js" crossorigin="anonymous" defer=""></script>
+    <script src="js/vendor-es2015.39ea11c848a845592c4c.js" crossorigin="anonymous" type="module"></script>
+    <script src=".js/vendor-es5.39ea11c848a845592c4c.js" crossorigin="anonymous" nomodule="" defer=""></script>
+    <script src="js/main-es2015.418775d648a9ed214bc4.js" crossorigin="anonymous" type="module"></script>
+    <script src="js/main-es5.418775d648a9ed214bc4.js" crossorigin="anonymous" nomodule="" defer=""></script>
+
+</body>
+</html>
